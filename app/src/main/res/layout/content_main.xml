@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.codes.chavez.joywheelly.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avoiding"
+        android:id="@+id/button1"
+        android:textOff="@string/switch_avoid_str_off"
+        android:textOn="@string/switch_avoid_str_on"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_str"
+        android:id="@+id/textView"
+        android:nestedScrollingEnabled="false"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/title_right_text"
+        android:elegantTextHeight="false"
+        android:layout_alignTop="@+id/button1"
+        android:layout_toLeftOf="@+id/joyview"
+        android:layout_alignLeft="@+id/title_right_text"
+        android:layout_alignStart="@+id/title_right_text"
+        android:background="@drawable/border_textview"
+        style="@style/LogTerminalText" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_dev_str"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textOff="@string/switch_follow_str_off"
+        android:textOn="@string/switch_follow_str_on" />
+
+    <com.codes.chavez.joywheelly.JoystickView
+        android:layout_width="210dp"
+        android:layout_height="200dp"
+        android:id="@+id/joyview"
+        android:layout_below="@+id/space1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Space
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:id="@+id/space1"
+        android:layout_below="@+id/button2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/title_right_text"
+        android:layout_alignBottom="@+id/joyview"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/in"
+        android:layout_alignTop="@+id/title_right_text"
+        android:layout_toRightOf="@+id/space1"
+        android:layout_toEndOf="@+id/space1"
+        android:layout_above="@+id/joyview" />
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New ToggleButton"
+        android:id="@+id/toggleButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textOff="@string/switch_str_off"
+        android:textOn="@string/switch_str_on"
+        android:layout_below="@+id/button2"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_alignRight="@+id/button2"
+        android:layout_alignEnd="@+id/button2" />
+
+    <com.codes.chavez.joywheelly.SensorView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/sensorviewdist"
+        android:layout_above="@+id/toggleButton"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@+id/button1"
+        style="@style/SensorViewOverlay" />
+
+    <com.codes.chavez.joywheelly.SensorView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/sensorviewlight"
+        android:layout_above="@+id/sensorviewdist"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        style="@style/SensorViewOverlay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clear_str"
+        android:id="@+id/buttonclear"
+        android:layout_above="@+id/title_right_text"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

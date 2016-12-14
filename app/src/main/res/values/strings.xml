@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">JoyWheelly</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_str">Hello Wheelly</string>
+    <string name="select_dev_str">Select dev</string>
+    <string name="switch_str_on">manual</string>
+    <string name="switch_str_off">auto</string>
+    <string name="default_mac">00:00:00:00</string>
+    <string name="switch_avoid_str_on">avoiding</string>
+    <string name="switch_avoid_str_off">avoiding</string>
+    <string name="switch_follow_str_on">following</string>
+    <string name="switch_follow_str_off">following</string>
+
+    <string name="clear_str">clear log</string>
+
+
+    <!--  BluetoothService -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving...</string>
+    <string name="title_connecting">Connecting...</string>
+    <string name="title_connected_to">Connected: </string>
+    <string name="title_not_connected">Not connected</string>
+    <!--  DeviceListActivity -->
+    <string name="scanning">Scanning for devices...</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+</resources>
